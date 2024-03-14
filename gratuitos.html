@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Document</title>
-    <link rel="stylesheet" media="screen and (max-width:700px)" href="mobile.css">
-    <link rel="stylesheet" href="unico.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="shortcut icon" href="aweto.png">
+        <title>Loja Aweto</title>
+        <link rel="stylesheet" media="screen and (max-width:700px)" href="mobile.css">
+        <link rel="stylesheet" href="separado.css">
+    </head>
 <body>
-    <style>
+
+<style>
         @media (max-width:700px){
         #nav-icone-menu,.fundo-clase,.fundo-menu,.fundo-lupa,#input-lupa,.caminho-mobile,#listamob,#fechar-busca{
                 display: flex;
@@ -409,69 +411,155 @@
     <!--ATIVAÇÃO DAS NAVEGAÇÕES--> 
  
 </header>
+  
 
-<div class="produto-detalhes" id="produto-detalhes">
+<!--Categoria um-->
+<article class="produto-categoria" id="categoria-produto">
+    <!--Nome Categoria-->
+    <h2 id="nome-categoria"> Gratuitos</h2>
+    <hr id="linha">
+</article>
 
-<div class="produto-imagem" id="produto-imagem">
-        <img class="imagem-produto" src="" alt="Produto"> <!--imagem-->
-</div>
+<!--PRODUTO-->
+<section class="fundo-produtos" id="fundo-produtosmob">
 
-<div class="titulo-produto" id="titulo-produto">
-<span class="product-name"></span><!--titulo-->
-</div>
-
-<div class="preço-produto" id="preço-produto">
-
-<div class="detalhe1" id="detalhe1">
-    <span class="produto-marca" id="produto-marca"><i class="bi bi-journal" id="cadeado"></i></span><!--Editora-->
-    <span class="produto-seguro"><i class="bi bi-file-lock-fill" id="cadeado"></i>Compra 100% Segura</span>
-</div>
-
-<div class="detalhe2" id="detalhe2">
-    <span class="product-price"></span><!--preço-->
-    <span class="produto-comprar" id="produto-comprar" >Adicionar ao Carrinho</span><!--comprar-->
-    
-    <span class="forma-pagamento" id="forma-pagamento"><i class="bi bi-wallet2"> Pagamento via Pix</i></span>
-</div>
-
-<div class="detalhe-produto" id="detalhe-produto">
-    <i class="bi bi-journals" id="produto-infor"><span class="produto-infor" id="produto-quantidade"></span></i><!-- quantidade de pagina-->
-    <i class="bi bi-person-bounding-box" id="produto-infor"><span class="produto-idade" ></span></i><!--idade-->
-    <i class="bi bi-journal-text" id="produto-infor"><span class="produto-infor" >Formato Ebook</span></i><!--formato-->
-    <i class="bi bi-globe-europe-africa"  id="produto-infor"><span>Idioma Brasileiro</span></i>
-</div>
-</div>
-
-<div class="descriçao-produto">
-    <h2>Descrição</h2>
-
-    <span class="descriçao"><!--descrição--></span>
-</div>
-
-<div>
-
-</div>
-
-
-
-</div>
-
-<div class="mais-produtos">
-    <div class="titulo-mais">
-        <p id="texto-mais">Outros</p>
+  
+    <div class="bloco" id="bloco">
+        <img src="https://thumbs2.imgbox.com/eb/5e/ZHAZE6yZ_t.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">5 Maneiras para Melhorar sua Auto Confiança </h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria  Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">Gratuito</p>
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            '5 Maneiras para Melhorar sua Auto Confiança', /*nome do produto  - produto.nome*/
+            '00,00' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/eb/5e/ZHAZE6yZ_t.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '16 Páginas',
+            'Sem restrição de Idade',
+            'A vida é cheia de desafios e há muitas vezes em que é difícil manter a confiança. Quando isso acontecer, reserve um tempo do dia para sentar e fazer uma lista de todas as coisas \nem sua vida pelas quais você é grato e todas as coisas que você realizou. Coloque essa lista na porta da geladeira ou em outro lugar onde possa ser vista com  facilidade e observe as listas sempre que sua autoconfiança começar a diminuir. Se você sente que tem baixa auto-estima, esses cinco métodos poderosos podem ajudá-lo a se sentir melhor sobre quem você é e para onde está indo.Não deixe que a falta de confiança continue a impedi-lo de alcançar seus objetivos e se tornar a pessoa que sempre sonhou em se tornar.Com um pouco de tempo e esforço, você pode construir sua auto-estima e confiança e começar a viver uma vida mais feliz e saudável.',
+            )">Comprar</button>
+            
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Maneiras para Melhorar sua Auto Confiança ', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
     </div>
 
-    
-</div>
+    <div class="bloco" id="bloco">
+        <img src="https://thumbs2.imgbox.com/ce/d3/WjHvQYpP_t.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">5 Passos Para Ter Êxito<br> Livro 1</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">Gratuito</p>
+        
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            '5 Passos Para Ter Êxito', /*nome do produto  - produto.nome*/
+            '00,00' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/ce/d3/WjHvQYpP_t.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '104 Páginas',
+            'Sem restrição de Idade',
+            'A busca por autoajuda também é uma prática importante para promover o desenvolvimento pessoal. Ler livros motivacionais, participar de palestras e workshops que promovam o crescimento  pessoal são atitudes que podem ajudar a superar desafios,  desenvolver habilidades e aumentar a autoconfiança.'
+            )">Comprar</button>
+
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Passos Para Ter Êxito Livro 1', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+     </div>
+
+     <div class="bloco" id="bloco">
+        <img src="https://thumbs2.imgbox.com/4a/75/iG0QMn6N_t.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">5 Passos Para Ter Êxito<br> Livro 2</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">Gratuito</p>
+        
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            '5 Passos Para Ter Êxito Livro 2', /*nome do produto  - produto.nome*/
+            '00,00' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/4a/75/iG0QMn6N_t.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '80 Páginas',
+            'Sem restrição de Idade',
+            'Você não precisa passar horas intermináveis todos os dias praticando o processo de visualização criativa. Estas cinco simples técnicas podem ajudá-lo a encontrar o caminho certo para praticar visualização criativa para manifestar todos os seus objetivos e desejos.Para ter sucesso no processo, você precisa adquirir o hábito de praticar diariamente. Visualize-se tendo sucesso!'
+            )">Comprar</button>
+
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Passos Para Ter Êxito Livro 2', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+     
+    </div>
+
+    <div class="bloco" id="bloco">
+        <img src="felicidade.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">A Felicidade Começa Com Você</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">Gratuito</p>
+        
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'A Felicidade Começa Com Você', /*nome do produto  - produto.nome*/
+            '00,00' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/ce/d3/WjHvQYpP_t.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '80 Páginas',
+            'Sem restrição de Idade',
+            'A pessoa feliz não é aquela que não tem problemas. É, na verdade, aquela que escolheu parar de ver ameaças para identificar desafios, aquela que deixou de se culpar pelos erros e resolveu torná-los oportunidades de aprendizado.'
+            )">Comprar</button>
+
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('A Felicidade Começa Com Você', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+     </div>
+
+     <div class="bloco" id="bloco">
+        <img src="passo7.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">7 Passos Para O Sucesso Pleno</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">Gratuito</p>
+        
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            '7 Passos Para O Sucesso Pleno', /*nome do produto  - produto.nome*/
+            '00,00' ,/* preço do produto - produto.preço*/
+            'passo7.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '100 Páginas',
+            'Sem restrição de Idade',
+            'A motivação não é um passo difícil de dar na vida. Embora em alguns casos você pode se sentir desesperado e privado de tempo, um pequeno empurrão pode virar coisas ao redor. Todos esses aplicativos funcionam apenas para fazer você se sentir confortável e confiante de que há mais coisas que você pode fazer diariamente.'
+            )">Comprar</button>
+
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('7 Passos Para O Sucesso Pleno', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+     
+    </div>
+
+    <div class="bloco" id="bloco">
+        <img src="https://thumbs2.imgbox.com/63/14/Ymvurfmc_t.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">Fortalecimento Espiritual</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">Gratuito</p>
+        
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'Fortalecimento Espiritual', /*nome do produto  - produto.nome*/
+            '00,00' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/63/14/Ymvurfmc_t.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '28 Páginas',
+            'Sem restrição de Idade',
+            'Cada viagem tem um fim e cada empresa que você obter-se em tem um objetivo a ser alcançado no final. Como você atravessa o processo de fortalecimento espiritual, você não só obter-se a experiência de liberdade e independência, mas você se move perto de nirvana também.'
+            )">Comprar</button>
+
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Fortalecimento Espiritual', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+     
+    </div>
+
+
+ 
 
 
 
+    <!--Veja Mais-->
 
-
-
-
-
-
+</section>
 
 
 
@@ -522,10 +610,9 @@
 
  </footer>
 
-
-
  <script src="lupa.js"></script>
  <script src="script.js"></script>
  <script src="produto.js"></script>
  <script src="unico.js"></script>
 </body>
+</html>

@@ -23,6 +23,9 @@
             width:100%;
            overflow-x: hidden;
         }
+        #logo{
+        transform: translateX(50px) translateY(10px) scale(0.9); 
+        }
     }
 
      
@@ -42,11 +45,9 @@
   
 
      <div class="fundo-texto-menu">
-        <p class="menu-texto">Educação</p>
-        <p class="menu-texto">Vida e Saude</p>
-        <p class="menu-texto">Filosofia</p>
-        <p class="menu-texto">Auto Ajuda</p> 
-        <p class="menu-texto"> Dinheiro e Negócios</p> 
+        <p class="menu-texto">Religião</p>
+        <p class="menu-texto">Auto Ajuda</p>
+        <p class="menu-texto">Grauitos</p>
         <p class="menu-texto">Outros</p> 
      </div>
 
@@ -55,17 +56,17 @@
 
     <!--Logotipo-->
     <a href="index.html">
-    <img src="aweto.png" id="logo">
+    <img src="aweto.png" id="logo" class="logomob">
     </a>
 
     <!--Navegação-->
     <nav>
-        <p id="texto-nav" class="clique-menu1">Educação</p>
-        <p id="texto-nav" class="clique-menu2">Vida e Saude</p>
-        <p id="texto-nav" class="clique-menu3">Filosofia e Religião</p>
-        <p id="texto-nav" class="clique-menu4">Auto Ajuda</p> 
-        <p id="texto-nav" class="clique-menu5">Dinheiro e Negócios</p> 
-        <p id="texto-nav" class="clique-menu6">Gratuitos</p> 
+        <a href="religião.html"><p id="texto-nav" class="clique-menu1">Religião</p></a>
+        <a href="autoajuda.html"><p id="texto-nav" class="clique-menu2">Auto Ajuda</p></a>
+        <a href="gratuitos.html"><p id="texto-nav" class="clique-menu3">Gratuitos</p></a>
+        <a href="index.html"><p id="texto-nav" class="clique-menu4">Outros</p> </a>
+        <a href=""><p id="texto-nav" class="clique-menu5"></p> </a>
+        <a href=""><p id="texto-nav" class="clique-menu6"></p> </a>
     </nav>
 
     <!--lupa-->
@@ -76,21 +77,204 @@
 
         <div class="pesquisa" >
             <input type="text" name="" id="input-pesquisa" placeholder="O que procura">
-<!--Categoria oficial-->
-            <ul class="lupa-pesquisa" id="lista">
-                <a href=""><li class="dados-lupa" id="lista1">Filosofia Moderna</li></a>
-                <a href=""><li class="dados-lupa" id="lista1">Filosofia Medieval</li></a>
-                <a href=""><li class="dados-lupa">Português</li></a>
-                <a href=""><li class="dados-lupa">Filosofia</li></a>
-                <a href=""><li class="dados-lupa">Artes</li></a>
-                <a href=""><li class="dados-lupa">História</li></a>
-                <a href=""><li class="dados-lupa">História</li></a>
-                <a href=""><li class="dados-lupa">Filosofia</li></a>
-                <a href=""><li class="dados-lupa">Artes</li></a>
-                <a href=""><li class="dados-lupa">História</li></a>
-                <a href=""><li class="dados-lupa">História</li></a>
 
+            <!--Categoria oficial-->
+            <ul class="lupa-pesquisa" id="lista">
+                <a href="religião.html"><li class="dados-lupa">Religião</li></a>
+                <a href="autoajuda.html"><li class="dados-lupa" id="lista1">Auto Ajuda</li></a>
+                <a href="gratuitos.html"><li class="dados-lupa">Gratuitos</li></a>
+          
                 <li class="dados-lupa"onclick="adicionarProduto(
+                    'Maravilha Da Magia Cigana Livro 1', /*nome do produto  - produto.nome*/
+                    '49,90' ,/* preço do produto - produto.preço*/
+                    'https://thumbs2.imgbox.com/0b/d5/GEfq1fL8_t.jpg', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '151 Páginas',
+                    'Sem restrição de Idade',
+                    'Ao concluir esta primeira obra de uma coleção tão importante, a alegria de poder compendiar tantas sabedorias milenares nos dão uma alegria incomensurável. É claro que, apesar dos dez livros desta coletânea não conseguiremos trazer toda esta sabedoria tão linda. Afinal, são milênios de informações acumuladas. E sabemos que a sabedoria cigana não é escrita, e quando o é, são destruídas a cada mudança da caravana. Justamente para se preservar sua integridade.',
+                    )" >Livro : Maravilhas da Magia Cigana Livro 1</li>
+
+                <li class="dados-lupa" onclick="adicionarProduto(
+                    'Maravilha Da Magia Cigana Livro 2', /*nome do produto  - produto.nome*/
+                    '49,90' ,/* preço do produto - produto.preço*/
+                    '/maravilja2.png', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '185 Páginas',
+                    'Sem restrição de Idade',
+                    'Este é o segundo volume da obra Maravilhas da  Magia Cigana. Como dito no primeiro tomo, é fruto de estudos e pesquisas da equipe do Institutzo AWETO, e tem por finalidade o resgate e divulgação desta sabedoria milenar e tão importante. Entender estas crenças e culturas é de grande importância  na preservação de uma cultura oral, seus sincretismos e sabedorias',
+                    )">Livro : Maravilhas da Magia Cigana Livro 2</li>
+
+                <li class="dados-lupa"  onclick="adicionarProduto(
+                    'Maravilha Da Magia Cigana Livro 2', /*nome do produto  - produto.nome*/
+                    '49,90' ,/* preço do produto - produto.preço*/
+                    'https://thumbs2.imgbox.com/2b/0a/ppfFPp5z_t.jpg', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '164 Páginas',
+                    'Sem restrição de Idade',
+                    'Ciganos são um povo nômade cuja história é marcada por resistência e perseguição ao longo dos séculos. O estigma associado aos ciganos é resultado de preconceitos enraizados na sociedade, muitas vezes perpetuados por discursos preconceituosos e estereótipos negativos. No entanto, apesar das adversidades enfrentadas, os ciganos desenvolveram uma cultura rica e única, que inclui elementos místicos, como magia e espiritualidade',
+                    )">Livro : Maravilhas da Magia Cigana Livro 3</li>
+
+                <li class="dados-lupa" onclick="adicionarProduto(
+                    'Maravilha Da Magia Cigana Livro 2', /*nome do produto  - produto.nome*/
+                    '49,90' ,/* preço do produto - produto.preço*/
+                    '/4.png', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '164 Páginas',
+                    'Sem restrição de Idade',
+                    'Estudo dos ciganos teve início no século XV, quando as primeiras tribos surgiram na Europa. No entanto, foi apenas no século XIX que a gitanologia foi reconhecida como um ramo da etnologia, com o objetivo de estudá-los em todos os aspectos, principalmente em relação às suas origens. Em Campinas, atualmente residem cerca de 4 mil ciganos. É importante ressaltar que eles não gostam de ser comparados aos hippies, pois consideram que a vida nômade e a busca por fugir dos padrões do sistema são características próprias dos ciganos. Essa comparação os irrita.',
+                    )">Livro : Maravilhas da Magia Cigana Livro 4</li>
+
+                <li class="dados-lupa"   onclick="adicionarProduto(
+                    'Maravilha Da Magia Cigana Livro 5', /*nome do produto  - produto.nome*/
+                    '49,90' ,/* preço do produto - produto.preço*/
+                    '/5.png', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '181 Páginas',
+                    'Sem restrição de Idade',
+                    'A cultura cigana tem sido objeto de fascinação e mistério ao longo da história. Caracterizada por suas tradições distintas e estilo de vida nômade, a cultura cigana possui uma rica variedade de símbolos que desempenham um papel significativo em suas práticas místicas e cotidianas. Neste ensaio, exploraremos as simbologias presentes na cultura cigana, tendo em mente a importância da magia e dos simbolismos para esse grupo étnico.É importante ressaltar que a cultura cigana não é homogênea, uma vez que é composta por diferentes grupos que variam em costumes e tradições específicas. No entanto, é possível encontrar símbolos comuns que são reverenciados em várias comunidades ciganas ao redor do mundo.',
+                    )">Livro : Maravilhas da Magia Cigana Livro 5</li>
+
+                <li class="dados-lupa" onclick="adicionarProduto(
+                    'Maravilha Da Magia Cigana Livro 5', /*nome do produto  - produto.nome*/
+                    '49,90' ,/* preço do produto - produto.preço*/
+                    '/77.png', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '173 Páginas',
+                    'Sem restrição de Idade',
+                    'É maravilhoso quando podemos mergulhar no universo de um povo que acumulou tanta sabedoria pelo decorrer de sua história. E falamos de uma história de sofrimentos, alijamentos e diásporas. Os ciganos pelo seu modo de viver foram vilipendiados em todos os lugares onde estiveram ou passaram. Foram expulsos de diversos países, foram injustiçados, sofreram perseguições e genocídios, como no holocausto nazista, onde as vítimas ciganas se equiparam aos judeus assassinados por aquele sistema nefasto.Mas sobreviveram, não somente no Brasil, mas em todo o mundo. Com seus idiomas, suas etnias, sua cultura e sabedoria. Um povo valente, alegre e sempre disposto a sobreviver.',
+                    )">Livro: Maravilha da Magia Cigana Livro 6</li>
+
+                <li class="dados-lupa" onclick="adicionarProduto(
+                    'Boa Noite Para Quem é De Boa Noite ', /*nome do produto  - produto.nome*/
+                    '49,90' ,/* preço do produto - produto.preço*/
+                    '/9.png', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '113 Páginas',
+                    'Sem restrição de Idade',
+                    'Tata Zezinho França do Kabilah não é o que se pode chamar de “Pai de Santo”. Apesar de seus quase quarenta anos de iniciação e quase trinta como Egbòn, ou seja, de ter recebidos os direitos de ser sacerdote. Mas não se pode dizer que não seja um sacerdote. Sim, é. Mas não um daqueles que como nós dedicam a sua vida à Casa, Ègbè de Santo ou aos cuidados dos yawòs, filhos de Santo. É antes um intelectual. Um profundo conhecedor da religião em todos os sentidos. Dedicou à sua vida acadêmica e mesmo dentro da religião afrodescendente a desvendar os segredos e caminhos mais antigos deste culto tão vilipendiado pelos séculos de preconceito.O que me surpreende neste homem das ciências é o respeito que trata todas as ideias e caminhos que a religiosidade se propõe. E vemos isto em seus livros. Desde O Candomblé e a Bíblia, onde de',
+                    )">Livro: Boa Noite Para Quem é De Boa Noite</li>
+
+                <li class="dados-lupa" onclick="adicionarProduto(
+                    'Candomblé em sua Essência ', /*nome do produto  - produto.nome*/
+                    '39,90' ,/* preço do produto - produto.preço*/
+                    'cabomblé.png', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '146 Páginas',
+                    'Sem restrição de Idade',
+                    'Antigamente, os orixás eram homens. Homens que se tornaram orixás por causa de seus poderes. Homens que se tornaram orixás por causa de sua sabedoria. Eles eram respeitados por causa de sua força,Eles eram venerados por causa de suas virtudes. Nós adoramos sua memória e os altos feitos que realizaram. Foi assim que estes homens tornaram-se orixás.Os homens eram numerosos sobre a Terra.Antigamente, como hoje, Muitos deles não eram valentes nem sábios.',
+                    )">Livro: Candomblé em sua Essência</li>
+
+
+
+                <li class="dados-lupa"  onclick="adicionarProduto(
+                    '5 Maneiras para Melhorar sua Auto Confiança', /*nome do produto  - produto.nome*/
+                    '00,00' ,/* preço do produto - produto.preço*/
+                    '/5maneirasconfiança.png', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '16 Páginas',
+                    'Sem restrição de Idade',
+                    'A vida é cheia de desafios e há muitas vezes em que é difícil manter a confiança. Quando isso acontecer, reserve um tempo do dia para sentar e fazer uma lista de todas as coisas \nem sua vida pelas quais você é grato e todas as coisas que você realizou. Coloque essa lista na porta da geladeira ou em outro lugar onde possa ser vista com  facilidade e observe as listas sempre que sua autoconfiança começar a diminuir. Se você sente que tem baixa auto-estima, esses cinco métodos poderosos podem ajudá-lo a se sentir melhor sobre quem você é e para onde está indo.Não deixe que a falta de confiança continue a impedi-lo de alcançar seus objetivos e se tornar a pessoa que sempre sonhou em se tornar.Com um pouco de tempo e esforço, você pode construir sua auto-estima e confiança e começar a viver uma vida mais feliz e saudável.',
+                    )">Livro: 5 Maneiras para Melhorar sua Auto Confiança</li>
+
+                <li class="dados-lupa" onclick="adicionarProduto(
+                    'Turbinando Sua Memória', /*nome do produto  - produto.nome*/
+                    '19,90' ,/* preço do produto - produto.preço*/
+                    '/turbinandosuamemoria.png', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '400 Páginas', /*Quantidade de pagina*/
+                    'Sem restrição de Idade', /*Idade*/
+                    'A DES foi extinta pela Lei nº 15.406/2011. Em substituição, foi criada a Nota Fiscal do Tomador de Serviços (NFTS), que deve ser emitida desde o dia 01/09/2011. Para mais informações, acesse aqui.',
+                    )">Livro: 5 Técnicas Para Turbinando Sua Memória</li>
+
+                <li class="dados-lupa"  onclick="adicionarProduto(
+                    'Fortalecimento Espiritual', /*nome do produto  - produto.nome*/
+                    '19,90' ,/* preço do produto - produto.preço*/
+                    '/7passos.png', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '400 Páginas',
+                    'Sem restrição de Idade',
+                    'A DES foi extinta pela Lei nº 15.406/2011. Em substituição, foi criada a Nota Fiscal do Tomador de Serviços (NFTS), que deve ser emitida desde o dia 01/09/2011. Para mais informações, acesse aqui.'
+                    )">Livro: Fortalecimento Espiritual</li>
+
+                <li class="dados-lupa" onclick="adicionarProduto(
+                    '5 Passos Para Ter Êxito', /*nome do produto  - produto.nome*/
+                    '00,00' ,/* preço do produto - produto.preço*/
+                    '/5passos.png', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '104 Páginas',
+                    'Sem restrição de Idade',
+                    'A busca por autoajuda também é uma prática importante para promover o desenvolvimento pessoal. Ler livros motivacionais, participar de palestras e workshops que promovam o crescimento  pessoal são atitudes que podem ajudar a superar desafios,  desenvolver habilidades e aumentar a autoconfiança.'
+                    )">Livro: 5 Passos Para Ter Êxito Livro 1</li>
+
+                <li class="dados-lupa" onclick="adicionarProduto(
+                    '5 Passos Para Ter Êxito Livro 2', /*nome do produto  - produto.nome*/
+                    '00,00' ,/* preço do produto - produto.preço*/
+                    '/5passos2.png', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '80 Páginas',
+                    'Sem restrição de Idade',
+                    'Você não precisa passar horas intermináveis todos os dias praticando o processo de visualização criativa. Estas cinco simples técnicas podem ajudá-lo a encontrar o caminho certo para praticar visualização criativa para manifestar todos os seus objetivos e desejos.Para ter sucesso no processo, você precisa adquirir o hábito de praticar diariamente. Visualize-se tendo sucesso!'
+                    )">Livro: 5 Passos Para Ter Êxito Livro 2</li>
+
+                <li class="dados-lupa" onclick="adicionarProduto(
+                    '7 Passos Para O Sucesso Pleno', /*nome do produto  - produto.nome*/
+                    '00,00' ,/* preço do produto - produto.preço*/
+                    'passo7.png', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '100 Páginas',
+                    'Sem restrição de Idade',
+                    'A motivação não é um passo difícil de dar na vida. Embora em alguns casos você pode se sentir desesperado e privado de tempo, um pequeno empurrão pode virar coisas ao redor. Todos esses aplicativos funcionam apenas para fazer você se sentir confortável e confiante de que há mais coisas que você pode fazer diariamente.'
+                    )">Livro: 7 Passos Para O Sucesso Pleno</li>
+
+                <li class="dados-lupa"   onclick="adicionarProduto(
+                        'A Felicidade Começa Com Você', /*nome do produto  - produto.nome*/
+                        '00,00' ,/* preço do produto - produto.preço*/
+                        'https://thumbs2.imgbox.com/ce/d3/WjHvQYpP_t.png', /*imagem do produto produto.imagem*/
+                        'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                        '80 Páginas',
+                        'Sem restrição de Idade',
+                        'A pessoa feliz não é aquela que não tem problemas. É, na verdade, aquela que escolheu parar de ver ameaças para identificar desafios, aquela que deixou de se culpar pelos erros e resolveu torná-los oportunidades de aprendizado.'
+                    )">Livro: A Felicidade Começa Com Você</li>
+
+                <li class="dados-lupa"  onclick="adicionarProduto(
+                    'Administração Do Tempo', /*nome do produto  - produto.nome*/
+                    '19,90' ,/* preço do produto - produto.preço*/
+                    '', /*imagem do produto produto.imagem*/
+                    'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+                    '100 Páginas',
+                    'Sem restrição de Idade',
+                    'Você não precisa passar maioria das pessoas reclama da falta de tempo que dispõe para suas atividades diárias devido à enorme carga de tarefas que tem para executar.O que ocorre é que as pessoas quando aprendem em um curso acadêmico, ou mesmo ingressam de alguma forma em uma função, profissão, são sempre instruídas sobre “O que” fazer sendo ignorado o modo como se fazer o trabalho, principalmente aos detalhes que fazem o diferencial para se obter uma maior eficiência e eficácia. Não basta ser especialista no que se faz, é que preciso ter noções da melhor maneira de realizar o trabalhor horas intermináveis todos os dias praticando o processo de visualização criativa. Estas cinco simples técnicas podem ajudá-lo a encontrar o caminho certo para praticar visualização criativa para manifestar todos os seus objetivos e desejos.Para ter sucesso no processo, você precisa adquirir o hábito de praticar diariamente. Visualize-se tendo sucesso!'
+                    )">Livro: Administração Do Tempo</li>
+
+
+            </ul>
+        </div>
+
+     </div>
+     
+    <!--carrinho--> 
+    <div class="fundo-carrinho" id="fundo-carrinho">
+        <a href="carrinho.html" id="ircarrinho"><img src="compra.png"  id="nav-carrinho" class="clique-carro" ></a>
+    </div>
+
+    <!--lupa mob-->
+    <article class="config-lupa">
+
+        <div class="fundo-lupa">
+            <i class="bi bi-search" id="lupamob"></i>   
+            <input type="search" id="input-lupa" placeholder="O Que Você Procura ?">
+        </div>
+
+        <i class="bi bi-x-circle" id="fechar-busca"></i>
+
+        <!--DADOS DOS MENUS-->
+      
+         <ul id="listamob">
+            <a href=""><li class="dados-lupa" id="lista1">Religião</li></a>
+            <a href=""><li class="dados-lupa" id="lista1">Auto Ajuda</li></a>
+            <a href=""><li class="dados-lupa">Gratuitos</li></a>
+
+            <li class="dados-lupa"onclick="adicionarProduto(
                     'Maravilha Da Magia Cigana Livro 1', /*nome do produto  - produto.nome*/
                     '49,90' ,/* preço do produto - produto.preço*/
                     'https://thumbs2.imgbox.com/0b/d5/GEfq1fL8_t.jpg', /*imagem do produto produto.imagem*/
@@ -220,510 +404,13 @@
                     'Sem restrição de Idade',
                     'Você não precisa passaA maioria das pessoas reclama da falta de tempo que dispõe para suas atividades diárias devido à enorme carga de tarefas que tem para executar.O que ocorre é que as pessoas quando aprendem em um curso acadêmico, ou mesmo ingressam de alguma forma em uma função, profissão, são sempre instruídas sobre “O que” fazer sendo ignorado o modo como se fazer o trabalho, principalmente aos detalhes que fazem o diferencial para se obter uma maior eficiência e eficácia. Não basta ser especialista no que se faz, é que preciso ter noções da melhor maneira de realizar o trabalhor horas intermináveis todos os dias praticando o processo de visualização criativa. Estas cinco simples técnicas podem ajudá-lo a encontrar o caminho certo para praticar visualização criativa para manifestar todos os seus objetivos e desejos.Para ter sucesso no processo, você precisa adquirir o hábito de praticar diariamente. Visualize-se tendo sucesso!'
                     )">Livro: Administração Do Tempo</li>
-                <a href=""><li class="dados-lupa">Livro : Turbinando Sua Memória </li></a>
-                <a href=""><li class="dados-lupa">Livro : De um Jeito na sua Vida</li></a>
-                <a href=""><li class="dados-lupa">Livro : A Psicologia Financeira</li></a>
-                <a href=""><li class="dados-lupa">Livro : A Sutil Arte de Ligar o Foda-se</li></a>
-                <a href=""><li class="dados-lupa">Livro : Seja Foda</li></a>
-            </ul>
-        </div>
 
-        <div class="fechar">
-            <i class="bi bi-x-circle"></i>
-        </div>
-     </div>
-     
-
-    <!--carrinho--> 
-    <div class="fundo-carrinho">
-        <a href="carrinho.html" id="ircarrinho"><img src="compra.png"  id="nav-carrinho" class="clique-carro" ></a>
-    </div>
-
-    <!--lupa mob-->
-    <article class="config-lupa">
-
-        <div class="fundo-lupa">
-            <i class="bi bi-search" id="lupamob"></i>   
-            <input type="search" id="input-lupa" placeholder="O Que Você Procura ?">
-        </div>
-
-        
-        <i class="bi bi-x-circle" id="fechar-busca"></i>
-        <!--
-            DADOS DOS MENUS
-        -->
-      
-         <ul id="listamob">
-            <a href=""><li class="dados-lupa" id="lista1">Filosofia Moderna</li></a>
-            <a href=""><li class="dados-lupa" id="lista1">Filosofia Medieval</li></a>
-            <a href=""><li class="dados-lupa">Português</li></a>
-            <a href=""><li class="dados-lupa">Filosofia</li></a>
-            <a href=""><li class="dados-lupa">Artes</li></a>
-            <a href=""><li class="dados-lupa">História</li></a>
-            <a href=""><li class="dados-lupa">História</li></a>
-            <a href=""><li class="dados-lupa">Filosofia</li></a>
-            <a href=""><li class="dados-lupa">Artes</li></a>
-            <a href=""><li class="dados-lupa">História</li></a>
-            <a href=""><li class="dados-lupa">História</li></a>
-
-            <li class="dados-lupa"onclick="adicionarProduto(
-                'Maravilha Da Magia Cigana Livro 1', /*nome do produto  - produto.nome*/
-                '49,90' ,/* preço do produto - produto.preço*/
-                '/capa11.JPG', /*imagem do produto produto.imagem*/
-                'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-                '151 Páginas',
-                'Sem restrição de Idade',
-                'Ao concluir esta primeira obra de uma coleção tão importante, a alegria de poder compendiar tantas sabedorias milenares nos dão uma alegria incomensurável. É claro que, apesar dos dez livros desta coletânea não conseguiremos trazer toda esta sabedoria tão linda. Afinal, são milênios de informações acumuladas. E sabemos que a sabedoria cigana não é escrita, e quando o é, são destruídas a cada mudança da caravana. Justamente para se preservar sua integridade.',
-                )" >Livro : Maravilhas da Magia Cigana Livro 1</li>
-
-            <li class="dados-lupa" onclick="adicionarProduto(
-                'Maravilha Da Magia Cigana Livro 2', /*nome do produto  - produto.nome*/
-                '49,90' ,/* preço do produto - produto.preço*/
-                '/maravilja2.png', /*imagem do produto produto.imagem*/
-                'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-                '185 Páginas',
-                'Sem restrição de Idade',
-                'Este é o segundo volume da obra Maravilhas da  Magia Cigana. Como dito no primeiro tomo, é fruto de estudos e pesquisas da equipe do Institutzo AWETO, e tem por finalidade o resgate e divulgação desta sabedoria milenar e tão importante. Entender estas crenças e culturas é de grande importância  na preservação de uma cultura oral, seus sincretismos e sabedorias',
-                )">Livro : Maravilhas da Magia Cigana Livro 2</li>
-
-            <li class="dados-lupa"  onclick="adicionarProduto(
-                'Maravilha Da Magia Cigana Livro 2', /*nome do produto  - produto.nome*/
-                '49,90' ,/* preço do produto - produto.preço*/
-                '/maravilja2.png', /*imagem do produto produto.imagem*/
-                'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-                '164 Páginas',
-                'Sem restrição de Idade',
-                'Ciganos são um povo nômade cuja história é marcada por resistência e perseguição ao longo dos séculos. O estigma associado aos ciganos é resultado de preconceitos enraizados na sociedade, muitas vezes perpetuados por discursos preconceituosos e estereótipos negativos. No entanto, apesar das adversidades enfrentadas, os ciganos desenvolveram uma cultura rica e única, que inclui elementos místicos, como magia e espiritualidade',
-                )">Livro : Maravilhas da Magia Cigana Livro 3</li>
-
-            <li class="dados-lupa" onclick="adicionarProduto(
-                'Maravilha Da Magia Cigana Livro 2', /*nome do produto  - produto.nome*/
-                '49,90' ,/* preço do produto - produto.preço*/
-                '/4.png', /*imagem do produto produto.imagem*/
-                'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-                '164 Páginas',
-                'Sem restrição de Idade',
-                'Estudo dos ciganos teve início no século XV, quando as primeiras tribos surgiram na Europa. No entanto, foi apenas no século XIX que a gitanologia foi reconhecida como um ramo da etnologia, com o objetivo de estudá-los em todos os aspectos, principalmente em relação às suas origens. Em Campinas, atualmente residem cerca de 4 mil ciganos. É importante ressaltar que eles não gostam de ser comparados aos hippies, pois consideram que a vida nômade e a busca por fugir dos padrões do sistema são características próprias dos ciganos. Essa comparação os irrita.',
-                )">Livro : Maravilhas da Magia Cigana Livro 4</li>
-
-            <li class="dados-lupa"   onclick="adicionarProduto(
-                'Maravilha Da Magia Cigana Livro 5', /*nome do produto  - produto.nome*/
-                '49,90' ,/* preço do produto - produto.preço*/
-                '/5.png', /*imagem do produto produto.imagem*/
-                'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-                '181 Páginas',
-                'Sem restrição de Idade',
-                'A cultura cigana tem sido objeto de fascinação e mistério ao longo da história. Caracterizada por suas tradições distintas e estilo de vida nômade, a cultura cigana possui uma rica variedade de símbolos que desempenham um papel significativo em suas práticas místicas e cotidianas. Neste ensaio, exploraremos as simbologias presentes na cultura cigana, tendo em mente a importância da magia e dos simbolismos para esse grupo étnico.É importante ressaltar que a cultura cigana não é homogênea, uma vez que é composta por diferentes grupos que variam em costumes e tradições específicas. No entanto, é possível encontrar símbolos comuns que são reverenciados em várias comunidades ciganas ao redor do mundo.',
-                )">Livro : Maravilhas da Magia Cigana Livro 5</li>
-
-            <li class="dados-lupa" onclick="adicionarProduto(
-                'Maravilha Da Magia Cigana Livro 5', /*nome do produto  - produto.nome*/
-                '49,90' ,/* preço do produto - produto.preço*/
-                '/77.png', /*imagem do produto produto.imagem*/
-                'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-                '173 Páginas',
-                'Sem restrição de Idade',
-                'É maravilhoso quando podemos mergulhar no universo de um povo que acumulou tanta sabedoria pelo decorrer de sua história. E falamos de uma história de sofrimentos, alijamentos e diásporas. Os ciganos pelo seu modo de viver foram vilipendiados em todos os lugares onde estiveram ou passaram. Foram expulsos de diversos países, foram injustiçados, sofreram perseguições e genocídios, como no holocausto nazista, onde as vítimas ciganas se equiparam aos judeus assassinados por aquele sistema nefasto.Mas sobreviveram, não somente no Brasil, mas em todo o mundo. Com seus idiomas, suas etnias, sua cultura e sabedoria. Um povo valente, alegre e sempre disposto a sobreviver.',
-                )">Livro: Maravilha da Magia Cigana Livro 6</li>
-
-            <li class="dados-lupa" onclick="adicionarProduto(
-                'Boa Noite Para Quem é De Boa Noite ', /*nome do produto  - produto.nome*/
-                '49,90' ,/* preço do produto - produto.preço*/
-                '/9.png', /*imagem do produto produto.imagem*/
-                'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-                '113 Páginas',
-                'Sem restrição de Idade',
-                'Tata Zezinho França do Kabilah não é o que se pode chamar de “Pai de Santo”. Apesar de seus quase quarenta anos de iniciação e quase trinta como Egbòn, ou seja, de ter recebidos os direitos de ser sacerdote. Mas não se pode dizer que não seja um sacerdote. Sim, é. Mas não um daqueles que como nós dedicam a sua vida à Casa, Ègbè de Santo ou aos cuidados dos yawòs, filhos de Santo. É antes um intelectual. Um profundo conhecedor da religião em todos os sentidos. Dedicou à sua vida acadêmica e mesmo dentro da religião afrodescendente a desvendar os segredos e caminhos mais antigos deste culto tão vilipendiado pelos séculos de preconceito.O que me surpreende neste homem das ciências é o respeito que trata todas as ideias e caminhos que a religiosidade se propõe. E vemos isto em seus livros. Desde O Candomblé e a Bíblia, onde de',
-                )">Livro: Boa Noite Para Quem é De Boa Noite</li>
-
-            <li class="dados-lupa"  onclick="adicionarProduto(
-                '5 Maneiras para Melhorar sua Auto Confiança', /*nome do produto  - produto.nome*/
-                '00,00' ,/* preço do produto - produto.preço*/
-                '/5maneirasconfiança.png', /*imagem do produto produto.imagem*/
-                'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-                '16 Páginas',
-                'Sem restrição de Idade',
-                'A vida é cheia de desafios e há muitas vezes em que é difícil manter a confiança. Quando isso acontecer, reserve um tempo do dia para sentar e fazer uma lista de todas as coisas \nem sua vida pelas quais você é grato e todas as coisas que você realizou. Coloque essa lista na porta da geladeira ou em outro lugar onde possa ser vista com  facilidade e observe as listas sempre que sua autoconfiança começar a diminuir. Se você sente que tem baixa auto-estima, esses cinco métodos poderosos podem ajudá-lo a se sentir melhor sobre quem você é e para onde está indo.Não deixe que a falta de confiança continue a impedi-lo de alcançar seus objetivos e se tornar a pessoa que sempre sonhou em se tornar.Com um pouco de tempo e esforço, você pode construir sua auto-estima e confiança e começar a viver uma vida mais feliz e saudável.',
-                )">Livro: 5 Maneiras para Melhorar sua Auto Confiança</li>
-
-
-            <li class="dados-lupa" onclick="adicionarProduto(
-                'Turbinando Sua Memória', /*nome do produto  - produto.nome*/
-                '00,00' ,/* preço do produto - produto.preço*/
-                '/turbinandosuamemoria.png', /*imagem do produto produto.imagem*/
-                'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-                '400 Páginas', /*Quantidade de pagina*/
-                'Sem restrição de Idade', /*Idade*/
-                'A DES foi extinta pela Lei nº 15.406/2011. Em substituição, foi criada a Nota Fiscal do Tomador de Serviços (NFTS), que deve ser emitida desde o dia 01/09/2011. Para mais informações, acesse aqui.',
-                )">Livro: 5 Técnicas Para Turbinando Sua Memória</li>
-
-            <li class="dados-lupa"  onclick="adicionarProduto(
-                'Fortalecimento Espiritual', /*nome do produto  - produto.nome*/
-                '00,00' ,/* preço do produto - produto.preço*/
-                '/7passos.png', /*imagem do produto produto.imagem*/
-                'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-                '400 Páginas',
-                'Sem restrição de Idade',
-                'A DES foi extinta pela Lei nº 15.406/2011. Em substituição, foi criada a Nota Fiscal do Tomador de Serviços (NFTS), que deve ser emitida desde o dia 01/09/2011. Para mais informações, acesse aqui.'
-                )">Livro: Fortalecimento Espiritual</li>
-
-            <li class="dados-lupa" onclick="adicionarProduto(
-                '5 Passos Para Ter Êxito', /*nome do produto  - produto.nome*/
-                '00,00' ,/* preço do produto - produto.preço*/
-                '/5passos.png', /*imagem do produto produto.imagem*/
-                'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-                '104 Páginas',
-                'Sem restrição de Idade',
-                'A busca por autoajuda também é uma prática importante para promover o desenvolvimento pessoal. Ler livros motivacionais, participar de palestras e workshops que promovam o crescimento  pessoal são atitudes que podem ajudar a superar desafios,  desenvolver habilidades e aumentar a autoconfiança.'
-                )">Livro: 5 Passos Para Ter Êxito Livro 1</li>
-
-            <li class="dados-lupa" onclick="adicionarProduto(
-                '5 Passos Para Ter Êxito Livro 2', /*nome do produto  - produto.nome*/
-                '00,00' ,/* preço do produto - produto.preço*/
-                '/5passos2.png', /*imagem do produto produto.imagem*/
-                'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-                '80 Páginas',
-                'Sem restrição de Idade',
-                'Você não precisa passar horas intermináveis todos os dias praticando o processo de visualização criativa. Estas cinco simples técnicas podem ajudá-lo a encontrar o caminho certo para praticar visualização criativa para manifestar todos os seus objetivos e desejos.Para ter sucesso no processo, você precisa adquirir o hábito de praticar diariamente. Visualize-se tendo sucesso!'
-                )">Livro: 5 Passos Para Ter Êxito Livro 2</li>
-
-            <li class="dados-lupa"  onclick="adicionarProduto(
-                'Administração Do Tempo', /*nome do produto  - produto.nome*/
-                '00,00' ,/* preço do produto - produto.preço*/
-                '/10.png', /*imagem do produto produto.imagem*/
-                'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-                '100 Páginas',
-                'Sem restrição de Idade',
-                'Você não precisa passaA maioria das pessoas reclama da falta de tempo que dispõe para suas atividades diárias devido à enorme carga de tarefas que tem para executar.O que ocorre é que as pessoas quando aprendem em um curso acadêmico, ou mesmo ingressam de alguma forma em uma função, profissão, são sempre instruídas sobre “O que” fazer sendo ignorado o modo como se fazer o trabalho, principalmente aos detalhes que fazem o diferencial para se obter uma maior eficiência e eficácia. Não basta ser especialista no que se faz, é que preciso ter noções da melhor maneira de realizar o trabalhor horas intermináveis todos os dias praticando o processo de visualização criativa. Estas cinco simples técnicas podem ajudá-lo a encontrar o caminho certo para praticar visualização criativa para manifestar todos os seus objetivos e desejos.Para ter sucesso no processo, você precisa adquirir o hábito de praticar diariamente. Visualize-se tendo sucesso!'
-                )">Livro: Administração Do Tempo</li>
-            <a href=""><li class="dados-lupa">Livro : Turbinando Sua Memória </li></a>
-            <a href=""><li class="dados-lupa">Livro : De um Jeito na sua Vida</li></a>
-            <a href=""><li class="dados-lupa">Livro : A Psicologia Financeira</li></a>
-            <a href=""><li class="dados-lupa">Livro : A Sutil Arte de Ligar o Foda-se</li></a>
-            <a href=""><li class="dados-lupa">Livro : Seja Foda</li></a>
          </ul>
 
-      
-   
-
     </article>
-
-    <div class="fundo-menu1">
-        <div class="lista1">
-
-            <ul class="bloco-lista">
-                <a href="categoria.html"><p id="titulo-lista">DISCIPLINAR</p></a>
-                <a href="categoria.html"><li id="infor-lista1">Matemática</li></a> 
-                <a href="categoria.html"><li id="infor-lista1">Português</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Geografia</li></a> 
-                <a href="categoria.html"><li id="infor-lista1">História</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Física</li></a> 
-                <a href="categoria.html"><li id="infor-lista1">Todos</li></a> 
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href="categoria.html"><p id="titulo-lista">DIDÁTICOS</p></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Um</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Dois</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Três</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Quatro</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Cinco</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Todos</li></a>
-                
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href="categoria.html"><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Um</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Dois</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Três</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Quatro</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Cinco</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href="categoria.html"><p id="titulo-lista">POR AUTORES</p></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Um</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Dois</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Três</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Quatro</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Livro Cinco</li></a>
-                <a href="categoria.html"><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-        </div>
-        <p class="menu1-fechar">Fechar <i class="bi bi-x-circle"></i></p>
-        <div class="pensador">
-
-            <a href="">
-            "A humildade exprime uma das raras certezas de que estou certo:<br>
-            a de que ninguém é superior a ninguém."<br>
-            - Paulo Freires
-        </a>
-        </div>
-    </div>   
-    <div class="fundo-menu2">
-        <div class="lista2">
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">MELHORIA DE VIDA</p></a>
-                <a href=""><li id="infor-lista1">Disciplina</li></a>
-                <a href=""><li id="infor-lista1">Qualidade de Vida</li></a>
-                <a href=""><li id="infor-lista1">Melhoria de Hábitos</li></a>
-                <a href=""><li id="infor-lista1">Saúde Mental</li></a>
-                <a href=""><li id="infor-lista1">Saúde Física</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">POR AUTOR</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-        </div>
-
-        <p class="menu2-fechar">Fechar <i class="bi bi-x-circle"></i></p>
-
-        <div class="pensador">
-            "A verdadeira amizade é como a saúde:
-            o seu valor só é reconhecido quando a perdemos.."<br>
-            - Charles Caleb Colton
-        </div>
-
-    </div> 
-    <div class="fundo-menu3">
-        <div class="lista3">
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">FILOSOFIA</p></a>
-                <a href=""><li id="infor-lista1">Filosofia Moderna</li></a>
-                <a href=""><li id="infor-lista1">Filosofia Medieval</li></a>
-                <a href=""><li id="infor-lista1">Filosofia Contemporanêa</li></a>
-                <a href=""><li id="infor-lista1">Teorias da Humanidade</li></a>
-                <a href=""><li id="infor-lista1">Enciclopédia</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">POR AUTOR</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-        </div>
-
-        <p class="menu3-fechar">Fechar <i class="bi bi-x-circle"></i></p>
-
-        <div class="pensador">
-           "A ciência sem a religião é manca, a religião sem a ciência é cega."<br> 
-             - Albert Einstein
-        </div>
-    </div> 
-    <div class="fundo-menu4">
-        <div class="lista4">
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-        </div>
-
-        <p class="menu4-fechar">Fechar <i class="bi bi-x-circle"></i></p>
-        <div class="pensador">
-            Acredite em si e chegará um dia em que<br>
-            os outros não terão outra escolha senão acreditar com você.<br>
-            - Cynthia Kersey
-        </div>
-    </div> 
-    <div class="fundo-menu5">
-        <div class="lista5">
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-        </div>            
-        <p class="menu5-fechar">Fechar <i class="bi bi-x-circle"></i></p>
-        <div class="pensador">
-            Pensamentos conduzem a sentimentos. Sentimentos conduzem a ações. 
-            Ações conduzem a resultados.<br>
-            - T. Harv Eker
-        </div>
-    </div> 
-    <div class="fundo-menu6">
-        <div class="lista6">
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-            <ul class="bloco-lista">
-                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
-                <a href=""><li id="infor-lista1">Livro Um</li></a>
-                <a href=""><li id="infor-lista1">Livro Dois</li></a>
-                <a href=""><li id="infor-lista1">Livro Três</li></a>
-                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
-                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
-                <a href=""><li id="infor-lista1">Todos</li></a>
-            </ul>
-
-        </div>            
-        <p class="menu6-fechar">Fechar <i class="bi bi-x-circle"></i></p>
-        <div class="pensador">
-            A leitura de todos os bons livros é uma conversação com as mais
-            honestas pessoas dos séculos passados.<br>
-            - René Descartes
-        </div>
-    </div> 
-
+    
+    <!--ATIVAÇÃO DAS NAVEGAÇÕES--> 
+ 
 </header>
 
 <main>        
@@ -754,7 +441,7 @@
 <!--Caminhos-->
 <article class="caminhos">
 
-    <a href="categoria.html">
+    
     <div class="fundo-anuncioebooks">
       
         <i class="bi bi-journal-bookmark-fill" id="icone-ebooks"></i> 
@@ -782,9 +469,9 @@
         <p id="texto-ebooks">Clique para ver as melhores coleções de Ebooks da Loja</p>
      
     </div>
-    </a>
+    
  
-    <a href="categoria.html"> 
+
     <div class="fundo-anuncioebooks">
         
         <i class="bi bi-percent"  id="icone-ebooks"></i>
@@ -812,9 +499,9 @@
         <p id="texto-ebooks">Clique para ver as melhores coleções de Ebooks da Loja</p>
         
     </div>
-    </a>
+    
      
-    <a href="categoria.html"> 
+  
     <div class="fundo-anuncioebooks">
 
         <i class="bi bi-person-fill-exclamation"  id="icone-ebooks"></i>
@@ -842,7 +529,7 @@
         <p id="texto-ebooks">Clique para ver as melhores coleções de Ebooks da Loja</p>
      
     </div>
-    </a>
+    
     
 </article>
 
@@ -875,26 +562,7 @@
 
 </article>
 
-<!--Categorias-->
-<article class="categoria" id="categoriamob">
-    <button class="botao-catalogo"><i class="bi bi-caret-left-square-fill" id="botao-catalogo"></i></button>
-    
-    <div class="fundo-img-catalogo" id="fundo-img-catalogomob">                 
-    <a href="categoria.html"><img src="bt3.png" id="imgcatalogo" class="imgcatalogomob"></a>
-    <a href="categoria.html"><img src="bt4.png" id="imgcatalogo" class="imgcatalogomob"></a>
-    <a href="categoria.html"><img src="bt1.png" id="imgcatalogo" class="imgcatalogomob"></a>
-    <a href="categoria.html"><img src="bt2.png" id="imgcatalogo" class="imgcatalogomob"></a>
-    <a href="categoria.html"><img src="bt5.png" id="imgcatalogo" class="imgcatalogomob"></a>
-    <a href="categoria.html"><img src="bt6.png" id="imgcatalogo" class="imgcatalogomob"></a>
-    <a href="categoria.html"><img src="bt1.png" id="imgcatalogo" class="imgcatalogomob"></a>
-    <a href="categoria.html"><img src="bt2.png" id="imgcatalogo" class="imgcatalogomob"></a>
-     </div>
 
-    
- <button class="botao-catalogo"><i class="bi bi-caret-right-square-fill" id="botao-catalogo" id="troca-lado"></i></button>
- 
-
-</article>
 
 <!--Desconto-->
 <article class="desconto-dois" id="descontodoismob">
@@ -930,49 +598,7 @@
             )">Comprar</button>
             
         <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Turbinando Sua Memória', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-    </div>
-
-    <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/bb/8d/LFGXXz15_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">5 Técnicas Para Turbinando Sua Memória</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
-        <p class="preço-produto" id="preço-produto">Gratuito</p>
-
-        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
-            'Turbinando Sua Memória', /*nome do produto  - produto.nome*/
-            '00,00' ,/* preço do produto - produto.preço*/
-            '/turbinandosuamemoria.png', /*imagem do produto produto.imagem*/
-            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-            '400 Páginas', /*Quantidade de pagina*/
-            'Sem restrição de Idade', /*Idade*/
-            'A DES foi extinta pela Lei nº 15.406/2011. Em substituição, foi criada a Nota Fiscal do Tomador de Serviços (NFTS), que deve ser emitida desde o dia 01/09/2011. Para mais informações, acesse aqui.',
-            )">Comprar</button>
-
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Técnicas Para Turbinando Sua Memória', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-    </div>
-
-    <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/63/14/Ymvurfmc_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Fortalecimento Espiritual</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria Religioso</p>
-        <p class="preço-produto" id="preço-produto">Gratuito</p>
-     
-        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
-            'Fortalecimento Espiritual', /*nome do produto  - produto.nome*/
-            '00,00' ,/* preço do produto - produto.preço*/
-            'https://thumbs2.imgbox.com/63/14/Ymvurfmc_t.png', /*imagem do produto produto.imagem*/
-            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-            '400 Páginas',
-            'Sem restrição de Idade',
-            'A DES foi extinta pela Lei nº 15.406/2011. Em substituição, foi criada a Nota Fiscal do Tomador de Serviços (NFTS), que deve ser emitida desde o dia 01/09/2011. Para mais informações, acesse aqui.'
-            )">Comprar</button>
-
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Fortalecimento Espiritual', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Maneiras para Melhorar sua Auto Confiança ', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
         </div>
     </div>
 
@@ -993,7 +619,7 @@
             )">Comprar</button>
 
         <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Passos Para Ter Êxito', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Passos Para Ter Êxito Livro 1', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
         </div>
      </div>
 
@@ -1006,7 +632,7 @@
         <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
             '5 Passos Para Ter Êxito Livro 2', /*nome do produto  - produto.nome*/
             '00,00' ,/* preço do produto - produto.preço*/
-            'https://thumbs2.imgbox.com/4a/75/iG0QMn6N_t.pngg', /*imagem do produto produto.imagem*/
+            'https://thumbs2.imgbox.com/4a/75/iG0QMn6N_t.png', /*imagem do produto produto.imagem*/
             'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
             '80 Páginas',
             'Sem restrição de Idade',
@@ -1014,77 +640,64 @@
             )">Comprar</button>
 
         <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Passos Para Ter Êxito', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Passos Para Ter Êxito Livro 2', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
         </div>
      
     </div>
 
     <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/74/ab/nL53Abvf_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Administração Do Tempo</h2>
+        <img src="felicidade.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">A Felicidade Começa Com Você</h2>
         <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
         <p class="preço-produto" id="preço-produto">Gratuito</p>
         
         <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
-            'Administração Do Tempo', /*nome do produto  - produto.nome*/
+            'A Felicidade Começa Com Você', /*nome do produto  - produto.nome*/
             '00,00' ,/* preço do produto - produto.preço*/
-            'https://thumbs2.imgbox.com/74/ab/nL53Abvf_t.png', /*imagem do produto produto.imagem*/
+            'https://thumbs2.imgbox.com/ce/d3/WjHvQYpP_t.png', /*imagem do produto produto.imagem*/
             'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
-            '100 Páginas',
+            '80 Páginas',
             'Sem restrição de Idade',
-            'Você não precisa passaA maioria das pessoas reclama da falta de tempo que dispõe para suas atividades diárias devido à enorme carga de tarefas que tem para executar.O que ocorre é que as pessoas quando aprendem em um curso acadêmico, ou mesmo ingressam de alguma forma em uma função, profissão, são sempre instruídas sobre “O que” fazer sendo ignorado o modo como se fazer o trabalho, principalmente aos detalhes que fazem o diferencial para se obter uma maior eficiência e eficácia. Não basta ser especialista no que se faz, é que preciso ter noções da melhor maneira de realizar o trabalhor horas intermináveis todos os dias praticando o processo de visualização criativa. Estas cinco simples técnicas podem ajudá-lo a encontrar o caminho certo para praticar visualização criativa para manifestar todos os seus objetivos e desejos.Para ter sucesso no processo, você precisa adquirir o hábito de praticar diariamente. Visualize-se tendo sucesso!'
+            'A pessoa feliz não é aquela que não tem problemas. É, na verdade, aquela que escolheu parar de ver ameaças para identificar desafios, aquela que deixou de se culpar pelos erros e resolveu torná-los oportunidades de aprendizado.'
             )">Comprar</button>
 
         <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Administração Do Tempo', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('A Felicidade Começa Com Você', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+     </div>
+
+     <div class="bloco" id="bloco">
+        <img src="passo7.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">7 Passos Para O Sucesso Pleno</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">Gratuito</p>
+        
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            '7 Passos Para O Sucesso Pleno', /*nome do produto  - produto.nome*/
+            '00,00' ,/* preço do produto - produto.preço*/
+            'passo7.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '100 Páginas',
+            'Sem restrição de Idade',
+            'A motivação não é um passo difícil de dar na vida. Embora em alguns casos você pode se sentir desesperado e privado de tempo, um pequeno empurrão pode virar coisas ao redor. Todos esses aplicativos funcionam apenas para fazer você se sentir confortável e confiante de que há mais coisas que você pode fazer diariamente.'
+            )">Comprar</button>
+
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('7 Passos Para O Sucesso Pleno', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
         </div>
      
     </div>
 
-     <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/66/1f/DGi9i9UX_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Passos Para Ter Êxito', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
+ 
 
-     <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/45/53/1K3PBY5K_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Passos Para Ter Êxito', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
+
+ 
 
 
 
     <!--Veja Mais-->
-    <div class="vejamais" id="fundo-veja">
-        <p>Saiba Mais</p>
-    </div>
+
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!--Categoria um-->
 <article class="produto-categoria" id="categoria-produto">
@@ -1216,7 +829,7 @@
             )">Comprar</button>
             
         <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Maravilha Da Magia Cigana Livro 5 ', 49.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Maravilha Da Magia Cigana Livro 6 ', 49.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
         </div>
     </div>
 
@@ -1224,10 +837,10 @@
         <img src="https://thumbs2.imgbox.com/3c/73/21q9wkLl_t.png" class="img-fundo" id="img-fundomob">
         <h2 class="titulo-produto" id="titulo-produto">Boa Noite Para<br>Quem é De Boa Noite </h2>
         <p class="desconto-produto" id="desconto-produto">Categoria  Religiosos</p>
-        <p class="preço-produto" id="preço-produto">R$49,90</p>
+        <p class="preço-produto" id="preço-produto">R$39,90</p>
         <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
             'Boa Noite Para Quem é De Boa Noite ', /*nome do produto  - produto.nome*/
-            '49,90' ,/* preço do produto - produto.preço*/
+            '39,90' ,/* preço do produto - produto.preço*/
             'https://thumbs2.imgbox.com/3c/73/21q9wkLl_t.png', /*imagem do produto produto.imagem*/
             'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
             '113 Páginas',
@@ -1236,378 +849,220 @@
             )">Comprar</button>
             
         <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Boa Noite Para Quem é De Boa Noite ', 49.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Boa Noite Para Quem é De Boa Noite ', 39.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
         </div>
     </div>
 
-     <div class="bloco" id="bloco">
+    <div class="bloco" id="bloco">
+        <img src="cabomblé.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">Candomblé em sua Essência</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria  Religiosos</p>
+        <p class="preço-produto" id="preço-produto">R$39,90</p>
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'Candomblé em sua Essência ', /*nome do produto  - produto.nome*/
+            '39,90' ,/* preço do produto - produto.preço*/
+            'cabomblé.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '146 Páginas',
+            'Sem restrição de Idade',
+            'Antigamente, os orixás eram homens. Homens que se tornaram orixás por causa de seus poderes. Homens que se tornaram orixás por causa de sua sabedoria. Eles eram respeitados por causa de sua força,Eles eram venerados por causa de suas virtudes. Nós adoramos sua memória e os altos feitos que realizaram. Foi assim que estes homens tornaram-se orixás.Os homens eram numerosos sobre a Terra.Antigamente, como hoje, Muitos deles não eram valentes nem sábios.',
+            )">Comprar</button>
+            
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Candomblé em sua Essência ', 39.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+    </div>
+
+    <!--Veja Mais-->
+    <div class="vejamais" id="fundo-veja">
+        <a href="religião.html">Saiba Mais</a>
+    </div>
+</section>
+
+<article class="produto-categoria" id="categoria-produto">
+    <!--Nome Categoria-->
+    <h2 id="nome-categoria">Auto Ajuda</h2>
+    <hr id="linha">
+</article>
+
+<!--PRODUTO-->
+<section class="fundo-produtos" id="fundo-produtosmob">
+
+
+    <div class="bloco" id="bloco">
+        <img src="https://thumbs2.imgbox.com/bb/8d/LFGXXz15_t.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto"> Turbinando Sua Memória</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">R$19,90</p>
+
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'Turbinando Sua Memória', /*nome do produto  - produto.nome*/
+            '19,90' ,/* preço do produto - produto.preço*/
+            '/turbinandosuamemoria.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '400 Páginas', /*Quantidade de pagina*/
+            'Sem restrição de Idade', /*Idade*/
+            'A DES foi extinta pela Lei nº 15.406/2011. Em substituição, foi criada a Nota Fiscal do Tomador de Serviços (NFTS), que deve ser emitida desde o dia 01/09/2011. Para mais informações, acesse aqui.',
+            )">Comprar</button>
+
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Turbinando Sua Memória', 19.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+    </div>
+
+    <div class="bloco" id="bloco">
         <img src="https://thumbs2.imgbox.com/63/14/Ymvurfmc_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
+        <h2 class="titulo-produto" id="titulo-produto">Fortalecimento Espiritual</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">R$19,90</p>
+        
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'Fortalecimento Espiritual', /*nome do produto  - produto.nome*/
+            '19,90' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/63/14/Ymvurfmc_t.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '28 Páginas',
+            'Sem restrição de Idade',
+            'Cada viagem tem um fim e cada empresa que você obter-se em tem um objetivo a ser alcançado no final. Como você atravessa o processo de fortalecimento espiritual, você não só obter-se a experiência de liberdade e independência, mas você se move perto de nirvana também.'
+            )">Comprar</button>
+
         <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Fortalecimento Espiritual', 19.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
         </div>
-     </div>
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--Veja Mais-->
-    <div class="vejamais" id="fundo-veja">
-        <p>Saiba Mais</p>
-    </div>
-</section>
-
-
-<!--Categoria um-->
-<article class="produto-categoria" id="categoria-produto">
-    <!--Nome Categoria-->
-    <h2 id="nome-categoria"> Educação</h2>
-    <hr id="linha">
-</article>
-
-<!--PRODUTO-->
-<section class="fundo-produtos" id="fundo-produtosmob">
-
-    <!--bloco produto-->
-
-   
-    <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/56/4a/W3jpfpF6_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
-
-       
-    <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/56/4a/W3jpfpF6_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
-
-       
-    <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/56/4a/W3jpfpF6_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
-
-       
-    <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/56/4a/W3jpfpF6_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
-
-       
-    <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/56/4a/W3jpfpF6_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
-
-       
-    <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/56/4a/W3jpfpF6_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
-
-       
-    <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/56/4a/W3jpfpF6_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
-
-       
-    <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/98/de/qZHBEtKQ_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
-
-       
-
-
      
-
-
-    
- 
-
-    <!--Veja Mais-->
-    <div class="vejamais" id="fundo-veja">
-        <p>Saiba Mais</p>
     </div>
-</section>
 
-
-<!--Categoria um-->
-<article class="produto-categoria" id="categoria-produto">
-    <!--Nome Categoria-->
-    <h2 id="nome-categoria">Vida e Saúde</h2>
-    <hr id="linha">
-</article>
-
-<!--PRODUTO-->
-<section class="fundo-produtos" id="fundo-produtosmob">
-
-    <!--bloco produto-->
     <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/98/de/qZHBEtKQ_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>  <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/98/de/qZHBEtKQ_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>  <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/98/de/qZHBEtKQ_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>  <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/98/de/qZHBEtKQ_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>  <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/98/de/qZHBEtKQ_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>  <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/98/de/qZHBEtKQ_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>  <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/98/de/qZHBEtKQ_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>  <div class="bloco" id="bloco">
-        <img src="https://thumbs2.imgbox.com/98/de/qZHBEtKQ_t.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
+        <img src="10.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">Administração do Tempo</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">R$19,90</p>
+        
+        <button class="botao-compra" id="botao-compra"  onclick="adicionarProduto(
+            'Administração Do Tempo', /*nome do produto  - produto.nome*/
+            '19,90' ,/* preço do produto - produto.preço*/
+            '/10.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '100 Páginas',
+            'Sem restrição de Idade',
+            'Você não precisa passar maioria das pessoas reclama da falta de tempo que dispõe para suas atividades diárias devido à enorme carga de tarefas que tem para executar.O que ocorre é que as pessoas quando aprendem em um curso acadêmico, ou mesmo ingressam de alguma forma em uma função, profissão, são sempre instruídas sobre “O que” fazer sendo ignorado o modo como se fazer o trabalho, principalmente aos detalhes que fazem o diferencial para se obter uma maior eficiência e eficácia. Não basta ser especialista no que se faz, é que preciso ter noções da melhor maneira de realizar o trabalhor horas intermináveis todos os dias praticando o processo de visualização criativa. Estas cinco simples técnicas podem ajudá-lo a encontrar o caminho certo para praticar visualização criativa para manifestar todos os seus objetivos e desejos.Para ter sucesso no processo, você precisa adquirir o hábito de praticar diariamente. Visualize-se tendo sucesso!'
+            )">Comprar</button>
 
-    <!--Veja Mais-->
-    <div class="vejamais" id="fundo-veja">
-        <p>Saiba Mais</p>
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Fortalecimento Espiritual', 19.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+     
     </div>
-</section>
 
-<!--Categoria um-->
-<article class="produto-categoria" id="categoria-produto">
-    <!--Nome Categoria-->
-    <h2 id="nome-categoria">Dinheiro e Negócios</h2>
-    <hr id="linha">
-</article>
-
-<!--PRODUTO-->
-<section class="fundo-produtos" id="fundo-produtosmob">
-
-    <!--bloco produto-->
-
-   
     <div class="bloco" id="bloco">
-        <img src="/DINHEIRO.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
+        <img src="https://thumbs2.imgbox.com/eb/5e/ZHAZE6yZ_t.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">5 Maneiras para Melhorar sua Auto Confiança </h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria  Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">Gratuito</p>
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            '5 Maneiras para Melhorar sua Auto Confiança', /*nome do produto  - produto.nome*/
+            '00,00' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/eb/5e/ZHAZE6yZ_t.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '16 Páginas',
+            'Sem restrição de Idade',
+            'A vida é cheia de desafios e há muitas vezes em que é difícil manter a confiança. Quando isso acontecer, reserve um tempo do dia para sentar e fazer uma lista de todas as coisas \nem sua vida pelas quais você é grato e todas as coisas que você realizou. Coloque essa lista na porta da geladeira ou em outro lugar onde possa ser vista com  facilidade e observe as listas sempre que sua autoconfiança começar a diminuir. Se você sente que tem baixa auto-estima, esses cinco métodos poderosos podem ajudá-lo a se sentir melhor sobre quem você é e para onde está indo.Não deixe que a falta de confiança continue a impedi-lo de alcançar seus objetivos e se tornar a pessoa que sempre sonhou em se tornar.Com um pouco de tempo e esforço, você pode construir sua auto-estima e confiança e começar a viver uma vida mais feliz e saudável.',
+            )">Comprar</button>
+            
         <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Maneiras para Melhorar sua Auto Confiança ', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+    </div>
+
+    <div class="bloco" id="bloco">
+        <img src="https://thumbs2.imgbox.com/ce/d3/WjHvQYpP_t.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">5 Passos Para Ter Êxito<br> Livro 1</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">Gratuito</p>
+        
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            '5 Passos Para Ter Êxito', /*nome do produto  - produto.nome*/
+            '00,00' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/ce/d3/WjHvQYpP_t.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '104 Páginas',
+            'Sem restrição de Idade',
+            'A busca por autoajuda também é uma prática importante para promover o desenvolvimento pessoal. Ler livros motivacionais, participar de palestras e workshops que promovam o crescimento  pessoal são atitudes que podem ajudar a superar desafios,  desenvolver habilidades e aumentar a autoconfiança.'
+            )">Comprar</button>
+
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Passos Para Ter Êxito Livro 1', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
         </div>
      </div>
 
      <div class="bloco" id="bloco">
-        <img src="/DINHEIRO.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
+        <img src="https://thumbs2.imgbox.com/4a/75/iG0QMn6N_t.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">5 Passos Para Ter Êxito<br> Livro 2</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">Gratuito</p>
+        
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            '5 Passos Para Ter Êxito Livro 2', /*nome do produto  - produto.nome*/
+            '00,00' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/4a/75/iG0QMn6N_t.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '80 Páginas',
+            'Sem restrição de Idade',
+            'Você não precisa passar horas intermináveis todos os dias praticando o processo de visualização criativa. Estas cinco simples técnicas podem ajudá-lo a encontrar o caminho certo para praticar visualização criativa para manifestar todos os seus objetivos e desejos.Para ter sucesso no processo, você precisa adquirir o hábito de praticar diariamente. Visualize-se tendo sucesso!'
+            )">Comprar</button>
 
-
-     <div class="bloco" id="bloco">
-        <img src="/DINHEIRO.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
         <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('5 Passos Para Ter Êxito Livro 2', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
         </div>
-     </div>
-
-    
-     <div class="bloco" id="bloco">
-        <img src="/DINHEIRO.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
-
-     <div class="bloco" id="bloco">
-        <img src="/DINHEIRO.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
-
-     <div class="bloco" id="bloco">
-        <img src="/DINHEIRO.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
-
-     <div class="bloco" id="bloco">
-        <img src="/DINHEIRO.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
-
-     <div class="bloco" id="bloco">
-        <img src="/DINHEIRO.png" class="img-fundo" id="img-fundomob">
-        <h2 class="titulo-produto" id="titulo-produto">Descrição do Livro</h2>
-        <p class="desconto-produto" id="desconto-produto">Categoria do Livro</p>
-        <p class="preço-produto" id="preço-produto">Preço</p>
-        <button class="botao-compra" id="botao-compra">Comprar</button>
-        <div class="sistema-carrinho">
-            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Titulo do livro', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
-        </div>
-     </div>
      
+    </div>
+
+    <div class="bloco" id="bloco">
+        <img src="felicidade.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">A Felicidade Começa Com Você</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">Gratuito</p>
+        
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'A Felicidade Começa Com Você', /*nome do produto  - produto.nome*/
+            '00,00' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/ce/d3/WjHvQYpP_t.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '80 Páginas',
+            'Sem restrição de Idade',
+            'A pessoa feliz não é aquela que não tem problemas. É, na verdade, aquela que escolheu parar de ver ameaças para identificar desafios, aquela que deixou de se culpar pelos erros e resolveu torná-los oportunidades de aprendizado.'
+            )">Comprar</button>
+
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('A Felicidade Começa Com Você', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+     </div>
+
+     <div class="bloco" id="bloco">
+        <img src="passo7.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">7 Passos Para O Sucesso Pleno</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria Auto Ajuda</p>
+        <p class="preço-produto" id="preço-produto">Gratuito</p>
+        
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            '7 Passos Para O Sucesso Pleno', /*nome do produto  - produto.nome*/
+            '00,00' ,/* preço do produto - produto.preço*/
+            'passo7.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '100 Páginas',
+            'Sem restrição de Idade',
+            'A motivação não é um passo difícil de dar na vida. Embora em alguns casos você pode se sentir desesperado e privado de tempo, um pequeno empurrão pode virar coisas ao redor. Todos esses aplicativos funcionam apenas para fazer você se sentir confortável e confiante de que há mais coisas que você pode fazer diariamente.'
+            )">Comprar</button>
+
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('7 Passos Para O Sucesso Pleno', 0.00)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
      
- 
+    </div>
 
     <!--Veja Mais-->
-    <div class="vejamais" id="fundo-veja">
-        <p>Saiba Mais</p>
-    </div>
+  
 </section>
-
-
-
 
 <!--FINAL-->
 <footer class="footer">
@@ -1653,10 +1108,10 @@
 
  </footer>
 
- <script src="script.js"></script>
+
+
+<script src="script.js"></script>
 <script src="produto.js"></script>
 <script src="unico.js"></script>
-
-
 </body>
 </html>

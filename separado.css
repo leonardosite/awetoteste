@@ -29,6 +29,7 @@ a{
 }
 header{
     z-index:1 ;
+
 }
 main{
     z-index: 0;
@@ -52,6 +53,7 @@ header{
     height: 90px;
     background-color: #0c212d;
     color: white;
+    transform: translateY(-100px);
 }
 /*logotipo*/
 #logo{
@@ -198,195 +200,27 @@ nav{
 }
 
 
-/* 
 
-            CATEGORIA
-
-*/
-
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    transform: translateY(90px);
+/*CATEGORIA PRODUTO*/
+.produto-categoria{
+    text-align: center;
     width: 100%;
-    height: 5%;
-    background-color: #0c212d;
-    padding: 8px;
-}
-.categoria-geral{
-    display: flex;
-    justify-content: left;
-    align-items:center;
-    width: 50%;
-    height:100%;
-    background-color: white;
-    border:2px solid   #02141c;
-    color: #0c212d;
-    font-weight: bold;
-    transition: .2s;
-}
-.categoria-geral{
-    border-radius: 20px;
-
-}
-.categoria-clique{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content:left;
-    align-items: center;
-    font-size: 22px;
-    padding: 20px;
-    border: 2px solid #0c212d;
-    background-color: white;
-    transition: .2s;
-    cursor: pointer;
-}
-.categoria-clique:hover{
-
-    background-color: #0c212d;
-    border: 2px solid white;
-    color: #fbb03b;
-}
-.bi-journal-plus{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:#0c212d;
-    font-size: 25px;
-    font-weight: bold;
-    padding: 12px;
-}
-.bi-journal-plus:hover{
-    color:#fbb03b;
-    font-size: 25px;
-    font-weight: bold;    
-}
-.subcategorias{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color:#0792d35d;
-    transform: translateY(250px) translateX(360px);
-    width: 50%;
-    height: 120px;
-}
-#dadosub{
-    margin:9px;
+    transform: translateY(70px);
+    margin-top: 100px;
     
 }
-.seçao-menu{
-    display:flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    position: fixed;
-    padding: 10px;
-    transform: translateY(150px) translateX(370px);
-    overflow-y: scroll;
-    height: 0px;
+#linha{
     width: 50%;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    border-bottom: 3px solid #02141c;
-    z-index: 1;
-}
-.ativar-seçaomenu{
-    display:flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    padding: 10px;
-    transform: translateY(145px) translateX(363px);
-    overflow-y: scroll;
-    height: 245px;
-    width: 50%;
-    padding: 0;
-    background-color: white;
-    border: 3px solid #02141c;
-
-
-}
-.dados-menu{
-    display: flex;
-
-    margin: 0;
-    padding: 10px;
-    cursor: pointer;
-    background-color: white;
-    border: 1px solid black;
-
-    }
-.dados-menu:hover{
-    background-color: #0c212d;
-    color: #fbb03b;
-}
-.fundo-fechar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin:0px;
-    padding: 0;
-    height: 20px;
-    border-radius: 15px;
-    width: 90px;
-    height: 40px; 
-}
-#img-fechar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: bold;
-    color:#fbb03b;
-    width: 80%;
-    border-radius: 15px;
-    height: 30px;
-    transition: .2s;
-}
-#img-fechar:hover{
-    color:#fbb03b;
-    font-size: 25px;
-    font-weight: bold;
 }
 
-
-
-
-
-.categoria-produto{
-    
-    font-size: 20px;
-    transform: translateY(250px);
-    padding: 10px;
-
-}
-.titulo-categoria{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.linha-categoria{
-
-    border:5px solid #0c212d;
-    border-radius: 30px;
-    width: 510px;
-}
-
-
-
+/* FUNDO PRODUTOS */
 .fundo-produtos{
     display: flex;
     justify-content:center;
     align-items: center;
     flex-wrap: wrap;
     padding:40px;
-    transform: translateY(350px);
+    transform: translateY(50px);
     z-index: 2;
 }
 .bloco{
@@ -469,11 +303,51 @@ color: white;
     border:2px solid #0794d3; 
 }
 
+/*VEJA MAIS*/
+.vejamais{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color:#0794d3;
+    width: 10%;
+    transform: translateY(20px);
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.vejamais:hover{
+    background-color: #0c212d;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************FINAL********************************************************
+**************************************************************************************************
+**************************************************************************************************/
+
+/*FINAL*/
 footer{
-  
-    transform: translateY(400px);
+    transform: translateY(200px);
     background-color: #02141c;
     width: 100%;
     height: 680px;
@@ -481,6 +355,27 @@ footer{
     font-size: 18px;
 }
 
+/*Redes Sociais*/
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    background-color:#0c212d;
+}
+.imagem-redes{
+    height: 50px;
+    width: 210px;
+}
+.logo-redes{
+    margin-top: 9px;
+    padding: 2px;
+    height: 40px;
+    width: 40px;
+}
+
+/*Dados Empresariais*/
 .fundo-texto{
     display: flex;
     flex-wrap: wrap;
@@ -506,145 +401,4 @@ footer{
     text-align: center;
   
 }
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100px;
-    background-color:#0c212d;
-}
-.imagem-redes{
-    height: 50px;
-    width: 210px;
-}
-.logo-redes{
-    margin-top: 9px;
-    padding: 2px;
-    height: 40px;
-    width: 40px;
-}
 
-
-
-
-
-
-
-
-
-
-
-
-.fundo-ofertas{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transform: translateY(500px);
-    z-index: 2;
-    width: 100%;
-}
-.ativar-ofertas{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: absolute;
-    transform: translateY(610px);
-    z-index:2;
-    background-color: white;
-    width: 100%;
-}
-
-
-.fundo-religio{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transform: translateY(500px);
-    z-index: 2;
-    width: 100%;
-}
-.ativar-religio{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: absolute;
-    transform: translateY(600px);
-    z-index:2;
-    background-color: white;
-    width: 100%;
- 
-}
-
-.fundo-romance{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transform: translateY(600px);
-    z-index: 2;
-    width: 100%;
-}
-.ativar-romance{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: absolute;
-    transform: translateY(600px);
-    z-index:2;
-    background-color: white;
-    width: 100%;
-}
-
-
-
-
-/*DIDÁTICOS*/
-
-.fundo-didaticos{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transform: translateY(600px);
-    z-index: 2;
-    width: 100%;
-}
-.ativar-didatico{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: absolute;
-    transform: translateY(600px);
-    z-index:2;
-    background-color: white;
-    width: 100%;
-}
-
-
-.fundo-biografias{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transform: translateY(600px);
-    z-index: 2;
-    width: 100%;
-}
-.ativar-biografias{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: absolute;
-    transform: translateY(600px);
-    z-index:2;
-    background-color: white;
-    width: 100%;
-}

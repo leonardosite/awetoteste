@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Document</title>
-    <link rel="stylesheet" media="screen and (max-width:700px)" href="mobile.css">
-    <link rel="stylesheet" href="unico.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="shortcut icon" href="aweto.png">
+        <title>Loja Aweto</title>
+        <link rel="stylesheet" media="screen and (max-width:700px)" href="mobile.css">
+        <link rel="stylesheet" href="separado.css">
+    </head>
 <body>
     <style>
         @media (max-width:700px){
@@ -409,69 +410,183 @@
     <!--ATIVAÇÃO DAS NAVEGAÇÕES--> 
  
 </header>
+  
 
-<div class="produto-detalhes" id="produto-detalhes">
+<!--Categoria um-->
+<article class="produto-categoria" id="categoria-produto">
+    <!--Nome Categoria-->
+    <h2 id="nome-categoria"> Religiosos</h2>
+    <hr id="linha">
+</article>
 
-<div class="produto-imagem" id="produto-imagem">
-        <img class="imagem-produto" src="" alt="Produto"> <!--imagem-->
-</div>
+<!--PRODUTO-->
+<section class="fundo-produtos" id="fundo-produtosmob">
 
-<div class="titulo-produto" id="titulo-produto">
-<span class="product-name"></span><!--titulo-->
-</div>
+    <!--bloco produto-->
 
-<div class="preço-produto" id="preço-produto">
+    <div class="bloco" id="bloco">
+        <img src="https://thumbs2.imgbox.com/0b/d5/GEfq1fL8_t.jpg" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">Maravilha Da Magia Cigana <br>Livro 1 </h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria  Religiosos</p>
+        <p class="preço-produto" id="preço-produto">R$49,90</p>
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'Maravilha Da Magia Cigana Livro 1', /*nome do produto  - produto.nome*/
+            '49,90' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/0b/d5/GEfq1fL8_t.jpg', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '151 Páginas',
+            'Sem restrição de Idade',
+            'Ao concluir esta primeira obra de uma coleção tão importante, a alegria de poder compendiar tantas sabedorias milenares nos dão uma alegria incomensurável. É claro que, apesar dos dez livros desta coletânea não conseguiremos trazer toda esta sabedoria tão linda. Afinal, são milênios de informações acumuladas. E sabemos que a sabedoria cigana não é escrita, e quando o é, são destruídas a cada mudança da caravana. Justamente para se preservar sua integridade.',
+            )">Comprar</button>
+            
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Maravilha Da Magia Cigana Livro 1 ', 49.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+    </div>
 
-<div class="detalhe1" id="detalhe1">
-    <span class="produto-marca" id="produto-marca"><i class="bi bi-journal" id="cadeado"></i></span><!--Editora-->
-    <span class="produto-seguro"><i class="bi bi-file-lock-fill" id="cadeado"></i>Compra 100% Segura</span>
-</div>
-
-<div class="detalhe2" id="detalhe2">
-    <span class="product-price"></span><!--preço-->
-    <span class="produto-comprar" id="produto-comprar" >Adicionar ao Carrinho</span><!--comprar-->
-    
-    <span class="forma-pagamento" id="forma-pagamento"><i class="bi bi-wallet2"> Pagamento via Pix</i></span>
-</div>
-
-<div class="detalhe-produto" id="detalhe-produto">
-    <i class="bi bi-journals" id="produto-infor"><span class="produto-infor" id="produto-quantidade"></span></i><!-- quantidade de pagina-->
-    <i class="bi bi-person-bounding-box" id="produto-infor"><span class="produto-idade" ></span></i><!--idade-->
-    <i class="bi bi-journal-text" id="produto-infor"><span class="produto-infor" >Formato Ebook</span></i><!--formato-->
-    <i class="bi bi-globe-europe-africa"  id="produto-infor"><span>Idioma Brasileiro</span></i>
-</div>
-</div>
-
-<div class="descriçao-produto">
-    <h2>Descrição</h2>
-
-    <span class="descriçao"><!--descrição--></span>
-</div>
-
-<div>
-
-</div>
+    <div class="bloco" id="bloco">
+        <img src="https://thumbs2.imgbox.com/2b/0a/ppfFPp5z_t.jpg" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">Maravilha Da Magia Cigana <br>Livro 2 </h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria  Religiosos</p>
+        <p class="preço-produto" id="preço-produto">R$49,90</p>
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'Maravilha Da Magia Cigana Livro 2', /*nome do produto  - produto.nome*/
+            '49,90' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/2b/0a/ppfFPp5z_t.jpg', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '185 Páginas',
+            'Sem restrição de Idade',
+            'Este é o segundo volume da obra Maravilhas da  Magia Cigana. Como dito no primeiro tomo, é fruto de estudos e pesquisas da equipe do Institutzo AWETO, e tem por finalidade o resgate e divulgação desta sabedoria milenar e tão importante. Entender estas crenças e culturas é de grande importância  na preservação de uma cultura oral, seus sincretismos e sabedorias',
+            )">Comprar</button>
+            
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Maravilha Da Magia Cigana Livro 2 ', 49.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+    </div>
 
 
-
-</div>
-
-<div class="mais-produtos">
-    <div class="titulo-mais">
-        <p id="texto-mais">Outros</p>
+    <div class="bloco" id="bloco">
+        <img src="https://thumbs2.imgbox.com/d4/d9/FqLJlINh_t.jpg" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">Maravilha Da Magia Cigana <br>Livro 3 </h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria  Religiosos</p>
+        <p class="preço-produto" id="preço-produto">R$49,90</p>
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'Maravilha Da Magia Cigana Livro 2', /*nome do produto  - produto.nome*/
+            '49,90' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/d4/d9/FqLJlINh_t.jpg, /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '164 Páginas',
+            'Sem restrição de Idade',
+            'Ciganos são um povo nômade cuja história é marcada por resistência e perseguição ao longo dos séculos. O estigma associado aos ciganos é resultado de preconceitos enraizados na sociedade, muitas vezes perpetuados por discursos preconceituosos e estereótipos negativos. No entanto, apesar das adversidades enfrentadas, os ciganos desenvolveram uma cultura rica e única, que inclui elementos místicos, como magia e espiritualidade',
+            )">Comprar</button>
+            
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Maravilha Da Magia Cigana Livro 3 ', 49.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
     </div>
 
     
-</div>
+    <div class="bloco" id="bloco">
+        <img src="https://thumbs2.imgbox.com/c4/86/COLeBVdi_t.jpg" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">Maravilha Da Magia Cigana <br>Livro 4 </h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria  Religiosos</p>
+        <p class="preço-produto" id="preço-produto">R$49,90</p>
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'Maravilha Da Magia Cigana Livro 2', /*nome do produto  - produto.nome*/
+            '49,90' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/c4/86/COLeBVdi_t.jpg', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '164 Páginas',
+            'Sem restrição de Idade',
+            'Estudo dos ciganos teve início no século XV, quando as primeiras tribos surgiram na Europa. No entanto, foi apenas no século XIX que a gitanologia foi reconhecida como um ramo da etnologia, com o objetivo de estudá-los em todos os aspectos, principalmente em relação às suas origens. Em Campinas, atualmente residem cerca de 4 mil ciganos. É importante ressaltar que eles não gostam de ser comparados aos hippies, pois consideram que a vida nômade e a busca por fugir dos padrões do sistema são características próprias dos ciganos. Essa comparação os irrita.',
+            )">Comprar</button>
+            
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Maravilha Da Magia Cigana Livro 4 ', 49.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+    </div>
 
+    <div class="bloco" id="bloco">
+        <img src="https://thumbs2.imgbox.com/2e/5b/uuT008sK_t.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">Maravilha Da Magia Cigana <br>Livro 5 </h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria  Religiosos</p>
+        <p class="preço-produto" id="preço-produto">R$49,90</p>
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'Maravilha Da Magia Cigana Livro 5', /*nome do produto  - produto.nome*/
+            '49,90' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/2e/5b/uuT008sK_t.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '181 Páginas',
+            'Sem restrição de Idade',
+            'A cultura cigana tem sido objeto de fascinação e mistério ao longo da história. Caracterizada por suas tradições distintas e estilo de vida nômade, a cultura cigana possui uma rica variedade de símbolos que desempenham um papel significativo em suas práticas místicas e cotidianas. Neste ensaio, exploraremos as simbologias presentes na cultura cigana, tendo em mente a importância da magia e dos simbolismos para esse grupo étnico.É importante ressaltar que a cultura cigana não é homogênea, uma vez que é composta por diferentes grupos que variam em costumes e tradições específicas. No entanto, é possível encontrar símbolos comuns que são reverenciados em várias comunidades ciganas ao redor do mundo.',
+            )">Comprar</button>
+            
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Maravilha Da Magia Cigana Livro 5 ', 49.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+    </div>
 
+    <div class="bloco" id="bloco">
+        <img src="https://thumbs2.imgbox.com/2f/7c/tia0XKJG_t.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">Maravilha Da Magia Cigana <br>Livro 6 </h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria  Religiosos</p>
+        <p class="preço-produto" id="preço-produto">R$49,90</p>
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'Maravilha Da Magia Cigana Livro 5', /*nome do produto  - produto.nome*/
+            '49,90' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/2f/7c/tia0XKJG_t.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '173 Páginas',
+            'Sem restrição de Idade',
+            'É maravilhoso quando podemos mergulhar no universo de um povo que acumulou tanta sabedoria pelo decorrer de sua história. E falamos de uma história de sofrimentos, alijamentos e diásporas. Os ciganos pelo seu modo de viver foram vilipendiados em todos os lugares onde estiveram ou passaram. Foram expulsos de diversos países, foram injustiçados, sofreram perseguições e genocídios, como no holocausto nazista, onde as vítimas ciganas se equiparam aos judeus assassinados por aquele sistema nefasto.Mas sobreviveram, não somente no Brasil, mas em todo o mundo. Com seus idiomas, suas etnias, sua cultura e sabedoria. Um povo valente, alegre e sempre disposto a sobreviver.',
+            )">Comprar</button>
+            
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Maravilha Da Magia Cigana Livro 6 ', 49.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+    </div>
 
+    <div class="bloco" id="bloco">
+        <img src="https://thumbs2.imgbox.com/3c/73/21q9wkLl_t.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">Boa Noite Para<br>Quem é De Boa Noite </h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria  Religiosos</p>
+        <p class="preço-produto" id="preço-produto">R$39,90</p>
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'Boa Noite Para Quem é De Boa Noite ', /*nome do produto  - produto.nome*/
+            '39,90' ,/* preço do produto - produto.preço*/
+            'https://thumbs2.imgbox.com/3c/73/21q9wkLl_t.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '113 Páginas',
+            'Sem restrição de Idade',
+            'Tata Zezinho França do Kabilah não é o que se pode chamar de “Pai de Santo”. Apesar de seus quase quarenta anos de iniciação e quase trinta como Egbòn, ou seja, de ter recebidos os direitos de ser sacerdote. Mas não se pode dizer que não seja um sacerdote. Sim, é. Mas não um daqueles que como nós dedicam a sua vida à Casa, Ègbè de Santo ou aos cuidados dos yawòs, filhos de Santo. É antes um intelectual. Um profundo conhecedor da religião em todos os sentidos. Dedicou à sua vida acadêmica e mesmo dentro da religião afrodescendente a desvendar os segredos e caminhos mais antigos deste culto tão vilipendiado pelos séculos de preconceito.O que me surpreende neste homem das ciências é o respeito que trata todas as ideias e caminhos que a religiosidade se propõe. E vemos isto em seus livros. Desde O Candomblé e a Bíblia, onde de',
+            )">Comprar</button>
+            
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Boa Noite Para Quem é De Boa Noite ', 39.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+    </div>
 
+    <div class="bloco" id="bloco">
+        <img src="cabomblé.png" class="img-fundo" id="img-fundomob">
+        <h2 class="titulo-produto" id="titulo-produto">Candomblé em sua Essência</h2>
+        <p class="desconto-produto" id="desconto-produto">Categoria  Religiosos</p>
+        <p class="preço-produto" id="preço-produto">R$39,90</p>
+        <button class="botao-compra" id="botao-compra"   onclick="adicionarProduto(
+            'Candomblé em sua Essência ', /*nome do produto  - produto.nome*/
+            '39,90' ,/* preço do produto - produto.preço*/
+            'cabomblé.png', /*imagem do produto produto.imagem*/
+            'Editora: Instituto Aweto', /*detalhes do produto - produto.infor*/
+            '146 Páginas',
+            'Sem restrição de Idade',
+            'Antigamente, os orixás eram homens. Homens que se tornaram orixás por causa de seus poderes. Homens que se tornaram orixás por causa de sua sabedoria. Eles eram respeitados por causa de sua força,Eles eram venerados por causa de suas virtudes. Nós adoramos sua memória e os altos feitos que realizaram. Foi assim que estes homens tornaram-se orixás.Os homens eram numerosos sobre a Terra.Antigamente, como hoje, Muitos deles não eram valentes nem sábios.',
+            )">Comprar</button>
+            
+        <div class="sistema-carrinho">
+            <button class="botao-carrinho" id="botao-carrinho" onclick="addProduct('Candomblé em sua Essência ', 39.90)" ><p id="carrinho-produtos">Adicionar ao Carrinho</p></button>
+        </div>
+    </div>
 
-
-
-
-
+</section>
 
 
 
@@ -523,9 +638,9 @@
  </footer>
 
 
-
  <script src="lupa.js"></script>
  <script src="script.js"></script>
  <script src="produto.js"></script>
  <script src="unico.js"></script>
 </body>
+</html>

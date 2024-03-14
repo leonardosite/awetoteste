@@ -17,52 +17,6 @@ box.addEventListener('mouseout', ()=>{
 
 
 
-
-// ATIVAÇÃO DO MENU MOBILE
-const fundomenu= document.querySelector('.fundo-menu');
-const menuclique = document.querySelector('.clique-menu');
-const menufechar = document.querySelector('.fechar-menu');
-
-menuclique.addEventListener('click', ()=>{
-  fundomenu.classList.add("ativar-menu")
-})
-
-menufechar.addEventListener('click', ()=>{
-  fundomenu.classList.remove("ativar-menu")
-})
-
-
-
-// ATIVAÇÃO DO CARROSSEL
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function addcarro(){
-  const titulocarro = document.querySelector(".titulo-produto-carrinho");
-  const titulobloco = document.querySelector(".titulo-produto")
-  
-  document.getElementById('titulo-produto-carrinho').innerHTML = 'titulobloco'
-}
-
-
-
 //ATIVAÇÃO DA BARRA DE PESQUISA
 const pesquisainput = document.getElementById('input-pesquisa');//Barra de Pesquisa
 const produtoinput  = document.getElementById('lista').getElementsByTagName('li'); //Lista + Dados
@@ -81,6 +35,18 @@ for (let i = 0; i < produtoinput.length; i++){
     }
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
 
 //ATIVAÇÃO DA BARRA DE PESQUISAMOB
 const fundolupamob= document.querySelector('#listamob');
@@ -113,10 +79,3 @@ for (let i = 0; i < produtoinputmob.length; i++){
     }
 
 })
-
-
-
-
-
-
-
